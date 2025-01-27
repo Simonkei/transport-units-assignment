@@ -17,7 +17,7 @@ class TransportUnitFactory extends Factory
     public function definition(): array
     {
         return [
-            'name' => $this->faker->unique()->word(),
+            'name' => $this->faker->word(),
             'type' => $this->faker->randomElement(['trailer', 'truck']),
         ];
     }

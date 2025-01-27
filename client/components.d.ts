@@ -7,6 +7,12 @@ export {}
 
 declare module 'vue' {
   export interface GlobalComponents {
-    HelloWorld: typeof import('./src/components/HelloWorld.vue')['default']
+    BaseButton: typeof import("./src/components/BaseButton.vue")["default"]
+    TransportUnitsAddButton: typeof import('./src/components/TransportUnits/TransportUnitsAddButton.vue')['default']
+    TransportUnitsAddButtonDialog: typeof import('./src/components/TransportUnits/TransportUnitsAddButtonDialog.vue')['default']
+    TransportUnitsPagination: typeof import('./src/components/TransportUnits/TransportUnitsPagination.vue')['default']
+    TransportUnitsSearchInput: typeof import('./src/components/TransportUnits/TransportUnitsSearchInput.vue')['default']
+    TransportUnitsTable: typeof import('./src/components/TransportUnits/TransportUnitsTable.vue')['default']
+    TransportUnitsTabs: typeof import('./src/components/TransportUnits/TransportUnitsTabs.vue')['default']
   }
 }

@@ -5,13 +5,33 @@
  */
 
 // Styles
-import '@mdi/font/css/materialdesignicons.css'
-import 'vuetify/styles'
+import "@mdi/font/css/materialdesignicons.css";
+import "vuetify/styles";
 
 // Composables
-import { createVuetify } from 'vuetify'
+import { createVuetify } from "vuetify";
 
-// https://vuetifyjs.com/en/introduction/why-vuetify/#feature-guides
 export default createVuetify({
-  //
-})
+  defaults: {
+    VBtn: {
+      style: "text-transform: none; font-weight: bold;",
+      flat: true,
+    },
+    VCard: {
+      rounded: "lg",
+      flat: true,
+    },
+  },
+  theme: {
+    themes: {
+      light: {
+        dark: false,
+        colors: {
+          primary: "#2a534a",
+          secondary: "#069468",
+          background: "#F7F7F7",
+        },
+      },
+    },
+  },
+});

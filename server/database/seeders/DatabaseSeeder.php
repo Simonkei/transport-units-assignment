@@ -14,6 +14,6 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-        TransportUnit::factory(10)->create();
+        TransportUnit::factory(300)->create();
     }
 }
