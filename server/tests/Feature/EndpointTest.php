@@ -2,7 +2,7 @@
 
 use App\Models\TransportUnit;
 
-it('successfully response for index', function () {
+it('successfully got a response for index', function () {
 
     TransportUnit::factory()->count(5)->create();
 
